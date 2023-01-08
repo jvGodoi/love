@@ -1,112 +1,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body
-{
+
+body {
     height: auto;
-    
+    width: 100%;
 }
-header
-{
+
+header {
     background-color: #0077b6;
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    overflow: hidden;
 }
-header h3
-{
+
+header h3 {
     color: white;
     font-family: "Poppins";
     font-size: 3em;
     letter-spacing: 1px;
-    text-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
-header span
-{
+
+header span {
     color: white;
     font-family: "Poppins";
     font-weight: 500;
     font-size: 1.1em;
     position: relative;
 }
-main
+div.cabecalho
 {
-    
+
+    text-align: center;
+}
+
+main {
+
     background-color: white;
     text-align: center;
     margin: 80px 10%;
     padding-bottom: 50px;
 }
-section.main-title
-{
+
+section.main-title {
     color: black;
     font-family: "Poppins";
     font-size: 1.1em;
     letter-spacing: 1px;
     margin-bottom: 50px;
     text-transform: uppercase;
- 
+
 }
-section.list
-{
+
+section.list {
     text-align: left;
 }
 
-section.list ul 
-{
+section.list ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 500px;
 }
-ul li
-{
-   
+
+ul li {
+
     margin: 8px;
     color: black;
     font-family: "Poppins";
     font-size: 0.91em;
     font-weight: 500;
 }
-div.flex
-{
+
+div.flex {
+    width: 80vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding: 45px;
 }
-div.flex img
-{
+
+div.flex img {
     height: 650px;
     width: 380px;
     border-radius: 20px;
     transition: 0.2s;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
-div.flex img:hover
-{
+
+div.flex img:hover {
     height: 750px;
     width: 420px;
     border-radius: 20px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
-section.last-text
-{
-    
+
+section.last-text {
+
     height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    
+
 }
-section.last-text::before
-{
+
+section.last-text::before {
     content: "";
     display: block;
     height: 3px;
@@ -114,18 +123,18 @@ section.last-text::before
     margin: 30px auto;
     background-color: #023e8a;
 }
-section.last-text::after
-{
+
+section.last-text::after {
     content: "";
     display: block;
     height: 3px;
     width: 60%;
     margin: 30px auto;
     background-color: #023e8a;
-    
+
 }
-section.last-text p
-{
+
+section.last-text p {
     color: black;
     font-family: "Poppins";
     margin: 8px;
@@ -134,22 +143,85 @@ section.last-text p
     font-size: 1.1em;
 }
 
-div.musica
-{
+div.musica {
     height: 350px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 100px;
-    
 }
 
-div.musica span
-{
+div.musica span {
     width: 430px;
     font-family: "Poppins";
     color: #023e8a;
     font-weight: bold;
     font-size: 1.3em;
+}
+
+@media screen and (max-width: 800px) {
+
+    header {
+        background-color: #0077b6;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        overflow: hidden;
+    }
+    header span.nome
+    {
+       display: block;
+       font-family: "Poppins";
+       font-weight: 800;
+    }
+   
+
+    div.flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0px;
+    }
+
+    div.flex img {
+        height: 570px;
+        width: 360px;
+        margin: 35px 0px;
+    }
+
+    div.flex img:hover {
+        height: 630px;
+        width: 400px;
+    }
+
+    section.last-text {
+
+        height: auto;
+        font-size: 0.85em;
+    }
+    div.musica {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        padding: 25px;
+        margin: 0px;
+    }
+
+    div.musica span {
+    
+        font-size: 1em;
+    }
+    iframe
+    {
+        width: 400px;
+        padding: 10px;
+    }
+
 }
