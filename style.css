@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    height: auto;
+    
+}
+header
+{
+    background-color: #0077b6;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+header h3
+{
+    color: white;
+    font-family: "Poppins";
+    font-size: 3em;
+    letter-spacing: 1px;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+header span
+{
+    color: white;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 1.1em;
+    position: relative;
+}
+main
+{
+    
+    background-color: white;
+    text-align: center;
+    margin: 80px 10%;
+    padding-bottom: 50px;
+}
+section.main-title
+{
+    color: black;
+    font-family: "Poppins";
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+ 
+}
+section.list
+{
+    text-align: left;
+}
+
+section.list ul 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+}
+ul li
+{
+   
+    margin: 8px;
+    color: black;
+    font-family: "Poppins";
+    font-size: 0.91em;
+    font-weight: 500;
+}
+div.flex
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+div.flex img
+{
+    height: 650px;
+    width: 380px;
+    border-radius: 20px;
+    transition: 0.2s;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+div.flex img:hover
+{
+    height: 750px;
+    width: 420px;
+    border-radius: 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+section.last-text
+{
+    
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    
+}
+section.last-text::before
+{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 60%;
+    margin: 30px auto;
+    background-color: #023e8a;
+}
+section.last-text::after
+{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 60%;
+    margin: 30px auto;
+    background-color: #023e8a;
+    
+}
+section.last-text p
+{
+    color: black;
+    font-family: "Poppins";
+    margin: 8px;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+div.musica
+{
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 100px;
+    
+}
+
+div.musica span
+{
+    width: 430px;
+    font-family: "Poppins";
+    color: #023e8a;
+    font-weight: bold;
+    font-size: 1.3em;
+}
